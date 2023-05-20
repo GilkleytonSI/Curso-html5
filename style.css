@@ -1,10 +1,12 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
     /*grid-column-gap: 10px; /*espaçamentos das colunas*/
     /*grid-row-gap: 10px ; /*espaçamentos das linhas*/
     /*grid-gap: 10px 30px; linhas e colunas */
-    grid-gap: 20px; /*deixar os dois no mesmo tamanho*/
+    grid-template-columns: auto 200px 100px;
+    grid-template-rows: 100px 200px 50px 300px;
+    grid-gap: 10px; /*deixar os dois no mesmo tamanho*/
 }
 
 .item{
