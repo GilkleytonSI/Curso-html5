@@ -7,7 +7,10 @@
     /*grid-gap: 10px 30px; linhas e colunas */
     /*grid-template-columns: auto 200px 100px;*/
     /*grid-template-rows: 100px 200px 50px 300px;*/
-    grid-template-columns: 2fr 1fr;
+    /*grid-template-columns: 2fr 1fr; unidade Fr*/
+    /*grid-template-columns: 100px repeat(3, 1fr) 200px;*/
+    /*grid-template-columns: repeat(2, 100px 200px 50px);*/
+    grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 10px; /*deixar os dois no mesmo tamanho*/
 }
 
