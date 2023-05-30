@@ -1,8 +1,12 @@
 .container{
-    /*width: 700px;*/
+    background-color: #CCC;
     display: grid;
-    grid-template-columns: repeat(7, minmax(200px, 1fr));
-    grid-gap: 10px; /*deixar os dois no mesmo tamanho*/
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header header header header header header"
+        "menu menu content content content content content content"
+        "footer footer footer footer footer footer footer ad"
+    ;
 }
 
 .item{
@@ -11,4 +15,36 @@
     padding: 20px;
     color: #fff;
     font-size: 20px;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: menu;
+}
+
+section{
+    grid-area: content;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.ad{
+   grid-area: ad; 
+}
+
+
+@media (max-width: 750px){
+    .container{
+        grid-template-areas:
+            "header header header menu"
+            "content content content content"
+            "ad ad ad ad"
+            "footer footer footer footer"
+        ;
+    }
 }
